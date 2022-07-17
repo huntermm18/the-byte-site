@@ -1,5 +1,5 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
+  <img alt="Vue logo" src="https://9to5google.com/2022/02/08/creating-and-organizing-tab-groups-in-google-chrome-what-you-need-to-know/" />
   <HelloWorld msg="Hi Annie" />
 </template>
 
