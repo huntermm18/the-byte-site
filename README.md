@@ -1,4 +1,4 @@
-# the-bite-site
+# the-byte-site
 
 ## Project setup
 ```
