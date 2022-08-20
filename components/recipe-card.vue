@@ -48,46 +48,15 @@
 </template>
 
 <script>
-import { Component, Prop, Vue } from 'nuxt-property-decorator'
 
-@Component
-export default class recipeCard extends Vue {
-  @Prop({required: true})
-  title
-
-  @Prop({required: false})
-  subTitle
-
-  @Prop({required: true})
-  recipe
-
-  @Prop({required: false})
-  picture
-
-  show = false
-
-  // import { Component, Prop, Vue } from 'nuxt-property-decorator'
-  // import { colors } from '~/components/colors'
-  // @Component
-  // export default class FavoriteColorCard extends Vue {
-  //   @Prop({ required: true })
-  //   name?: string
-  //   @Prop({ required: true })
-  //   byuId?: string
-  //   @Prop({ required: true })
-  //   favColor?: string
-  //   color: string = ''
-  //   mounted () {
-  //     this.color = this.favColor ?? ''
-  //   }
-  //   async changeColor () {
-  //     await this.$axios.$put(`https://api.byu.edu:443/domains/fullstack-training/mhm62-fav-color/V1/${this.byuId}`
-  //       , {
-  //         byu_id: this.byuId,
-  //         fav_color: this.color,
-  //         users_name: this.name
-  //       })
-  //     console.log(`Favorite color changed for ${this.name}`)
-  //   }
+export default {
+  name: 'recipeCard',
+  props: ['title', 'subTitle', 'recipe', 'picture'],
+  data () {
+    return {
+      show: false
+    }
+  }
 }
+
 </script>

@@ -100,7 +100,7 @@ export default {
       fixed: true,
       items: [
         {
-          icon: 'mdi-apps',
+          icon: 'mdi-home',
           title: 'Welcome',
           to: '/'
         },
