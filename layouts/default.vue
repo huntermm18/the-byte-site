@@ -101,12 +101,12 @@ export default {
       items: [
         {
           icon: 'mdi-home',
-          title: 'Welcome',
+          title: 'Home',
           to: '/'
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
+          title: 'More',
           to: '/inspire'
         },
         {

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Recipes</h1>
+    <h1 style="text-align: center">Recipes</h1>
     <div class="recipe-display">
       <div style="margin: 30px" v-for="recipe in recipes">
         <recipe-card
