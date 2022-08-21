@@ -6,7 +6,7 @@
         <recipe-card
           :title="recipe.title"
           :sub-title="recipe.subTitle"
-          :recipe="recipe.recipe"
+          :instructions="recipe.instructions"
           :picture="recipe.picture"
         />
       </div>

@@ -48,7 +48,8 @@
             <v-divider></v-divider>
 
             <v-card-text>
-              {{ recipe }}
+              <li v-for="i in ingredients">{{i}}</li>
+              {{ instructions }}
             </v-card-text>
           </div>
         </v-expand-transition>
@@ -62,7 +63,8 @@
       </v-card-title>
 
       <v-card-text>
-        {{ recipe }}
+        <li v-for="i in ingredients">{{i}}</li>
+        {{ instructions }}
       </v-card-text>
 
       <v-divider></v-divider>
@@ -86,7 +88,7 @@
 
 export default {
   name: 'recipeCard',
-  props: ['title', 'subTitle', 'recipe', 'picture'],
+  props: ['title', 'subTitle', 'instructions', 'ingredients','picture'],
   data () {
     return {
       show: false,
