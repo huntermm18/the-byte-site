@@ -10,7 +10,7 @@
         max-width="400"
       >
         <v-img
-          :src="picture"
+          :src="picture ? '/images/' + picture : '/chef.png'"
           height="200px"
         ></v-img>
 
@@ -49,7 +49,7 @@
 
             <v-card-text>
               <li v-for="i in ingredients">{{i}}</li>
-              {{ instructions }}
+              <br>{{ instructions }}
             </v-card-text>
           </div>
         </v-expand-transition>
@@ -63,8 +63,9 @@
       </v-card-title>
 
       <v-card-text>
+        <br>
         <li v-for="i in ingredients">{{i}}</li>
-        {{ instructions }}
+        <br>{{ instructions }}
       </v-card-text>
 
       <v-divider></v-divider>

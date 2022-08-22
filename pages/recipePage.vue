@@ -6,6 +6,7 @@
         <recipe-card
           :title="recipe.title"
           :sub-title="recipe.subTitle"
+          :ingredients="recipe.ingredients"
           :instructions="recipe.instructions"
           :picture="recipe.picture"
         />
