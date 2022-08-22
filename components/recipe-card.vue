@@ -7,7 +7,7 @@
     <template v-slot:activator="{ on, attrs }">
       <v-card
         class="mx-auto"
-        max-width="400"
+        max-width="320"
       >
         <v-img
           :src="picture ? '/images/' + picture : '/chef.png'"

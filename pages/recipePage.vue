@@ -42,5 +42,6 @@ export default {
 .recipe-display {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 </style>
