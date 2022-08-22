@@ -106,14 +106,14 @@ export default {
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'More',
-          to: '/inspire'
+          title: 'Recipe Page',
+          to: '/recipePage'
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Recipe Page',
-          to: '/recipePage'
-        }
+          title: 'More',
+          to: '/inspire'
+        },
       ],
       miniVariant: false,
       right: true,

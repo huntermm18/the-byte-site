@@ -50,6 +50,16 @@
             <v-card-text>
               <li v-for="i in ingredients">{{i}}</li>
               <br>{{ instructions }}
+              <br>
+              <v-card-text>
+                <v-chip-group
+                  v-model="selection"
+                  active-class="deep-purple accent-4 white--text"
+                  column
+                >
+                  <v-chip v-for="tag in tags">{{ tag }}</v-chip>
+                </v-chip-group>
+              </v-card-text>
             </v-card-text>
           </div>
         </v-expand-transition>
@@ -89,7 +99,7 @@
 
 export default {
   name: 'recipeCard',
-  props: ['title', 'subTitle', 'instructions', 'ingredients','picture'],
+  props: ['title', 'subTitle', 'instructions', 'ingredients', 'tags', 'picture'],
   data () {
     return {
       show: false,

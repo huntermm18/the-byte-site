@@ -8,6 +8,7 @@
           :sub-title="recipe.subTitle"
           :ingredients="recipe.ingredients"
           :instructions="recipe.instructions"
+          :tags="recipe.tags"
           :picture="recipe.picture"
         />
       </div>
