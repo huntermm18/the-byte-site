@@ -35,7 +35,7 @@
     {
         "title": "Chinese Chicken Salad",
         "subTitle": null,
-        "tags": ["Madsen", "AH", "Lunch", "Dinner", "Salad", "Chinese"],
+        "tags": ["Madsen", "AH", "Lunch", "Dinner", "Salad", "Asian"],
         "ingredients": ["Lettuce", "Cabbage", "Green onions, diced", "Fresh cilantro", "Chicken, cooked and diced", "Mandarin oranges", "Crushed raman noodles", "1/4 c. oil", "1/4 c. rice vinegar", "2 T. sugar", "2 T. soy sauce", "1/2 t. ginger"],
         "instructions": null,
         "picture": null
@@ -75,7 +75,7 @@
     {
         "title": "Egg Rolls",
         "subTitle": null,
-        "tags": ["Madsen", "AH", "Chinese", "Dinner"],
+        "tags": ["Madsen", "AH", "Asian", "Dinner"],
         "ingredients": ["3-4 c. finely chopped cabbage", "1 bunch of green onions, finely chopped", "1 can water chestnuts, finely chopped", "1 carrot, peeled and grated", "2-3 chicken breasts, cooked and finely chopped", "1/4 c. soy sauce", "1 t. garlic powder", "1/2 t. ginger", "Egg roll wrappers"],
         "instructions": "Mix vegetables, chicken, and seasonings together in a bowl.  Place 2 heaping spoonfuls of mixture in the center of a wrapper, roll up, and secure with water.  Deep fry in hot oil until golden brown.",
         "picture": null
@@ -86,6 +86,94 @@
         "tags": ["Madsen", "AH", "Breakfast", "Snack"],
         "ingredients": ["3 1/2 C. oats", "1 t. cinnamon", "1/4 t. salt", "1/3 C. brown sugar", "1/3 C. honey", "1/4 C. oil", "1 t. vanilla"],
         "instructions": "Mix oats, cinnamon, sat, and brown sugar in a bowl.  In another bowl microwave honey 30 seconds and then add oil and vanilla and then pour over the oat mixture.  Mix well and then spread on a greased cookie sheet.  Bake at 300 degrees for 30 minutes.  Cool completely and then store in an air tight container.",
+        "picture": null
+    },
+    {
+        "title": "Green Bean Stir Fry",
+        "subTitle": null,
+        "tags": ["Madsen", "AH", "Dinner", "Asian"],
+        "ingredients": ["1 pound chicken, diced", "2 T. oil", "16 oz. frozen cut green beans", "1 \u2013 8oz. can sliced water chestnuts", "1 3/4 c. water", "2 t. chicken bullion", "2 T. soy sauce", "2 T. corn starch", "1 T. brown sugar", "1/2 t. garlic powder", "1/4 t. ginger powder", "1/4 t. salt"],
+        "instructions": "Heat oil in a skillet.  Stir fry chicken, add green beans and water chestnuts and stir fry until beans get partially browned.  In a bowl stir together remaining ingredients.  Pour over chicken and vegetables stirring continually until sauce boils and thickens.  Remove from heat and serve over rice. Option:  Beef and Broccoli - Replace chicken, beans, and water chestnuts with steak and broccoli flowerets.  Use beef bouillon instead of chicken.",
+        "picture": null
+    },
+    {
+        "title": "Henry Pasta",
+        "subTitle": null,
+        "tags": ["Madsen", "AH", "Dinner", "Lunch", "Pasta"],
+        "ingredients": ["12 oz. bacon, diced", "2- 16 oz. cans of diced tomatoes", "1/4 c. olive oil", "2 T. butter", "1 T. sugar", "1 t. salt", "Dash of pepper", "1/2 t. garlic", "1/2 t. dry basil", "1/2 t. dry oregano", "1 c. frozen peas", "1 c. cream"],
+        "instructions": "In a large skillet, cook bacon then drain fat.  Add tomatoes, olive oil, butter, and seasonings.  Simmer for 10 minutes.  Add peas and cream.  Bring to a boil and then immediately remove from the heat and serve.",
+        "picture": null
+    },
+    {
+        "title": "Homemade Oreos",
+        "subTitle": null,
+        "tags": ["Madsen", "AH", "Dessert"],
+        "ingredients": ["1 chocolate fudge cake mx", "2 eggs", "1/2 c. shortening", "3 oz. cream cheese", "2 T. butter", "1 t. vanilla ", "2 c. powdered sugar"],
+        "instructions": "Mix together and roll into balls.   Place on a greased cookie sheet and bake at 350 degrees for 8 minutes.  Cool completely and then frost. For frosting, beat with electric beaters until smooth.",
+        "picture": null
+    },
+    {
+        "title": "Hummus",
+        "subTitle": null,
+        "tags": ["Madsen", "AH", "Misc", "Snack"],
+        "ingredients": ["2 cans garbanzo beans, drained (3 1/4 cups)", "2 t. minced garlic", "2 T. olive oil", "1/4 c. tahini paste", "1/3 c. lemon juice", "1 t. cumin", "1 1/2 t. salt"],
+        "instructions": "Add all ingredients to a food processor or blender and mix until smooth.  Serve with bread, crackers, or vegetables.  Makes 3 cups.",
+        "picture": null
+    },
+    {
+        "title": "Sticky Chicken Finger Wraps",
+        "subTitle": null,
+        "tags": ["Madsen", "AH", "Dinner", "Lunch"],
+        "ingredients": ["1/3 cup Frank's Original Hot Sauce", "3/4 cup brown sugar", "1/4 cup water"],
+        "instructions": "Mix and add to apx 8 breaded chicken fingers to be used for wraps.",
+        "picture": null
+    },
+    {
+        "title": "Sweet Pork",
+        "subTitle": null,
+        "tags": ["Madsen", "AH", "Dinner", "Slow Cookier"],
+        "ingredients": ["3-4 pound pork roast", "2 c. brown sugar", "16 oz. salsa, blended in blender", "16 oz. Coke"],
+        "instructions": "Put pork in crock pot and fill it half way up the pork with water.  Cook on high for 5 hours.  Drain off water and shred meat.  Mix together salsa, brown sugar, and Coke and pour over the pork.  Cook an additional 3 hours on high.  Serve in burritos or salads (lettuce, green ranch, pico, black beans, avacato, chips, cheese, and limes).",
+        "picture": null
+    },
+    {
+        "title": "Chad's Dutch Oven Artisan Bread",
+        "subTitle": null,
+        "tags": ["Nielson", "Bread"],
+        "ingredients": ["4 Cups Flour (Ideally quality bread flour)", "1/2 tsp Yeast", "1 1/2 tsp /Salt"],
+        "instructions": "Mix Dry Ingredients ensuring you don't pour the yeast on top of the salt which can kill the yeast. Add 2 cups Water 130 degrees. Mix Well using a rubber spatula. Add 1.5 Tbsp Olive Oil and Mix Well and form ball. Cover with Plastic and  (Sealed Edges) set on the countertop for 3-5 hours (5 hours seems to work best). After the 5 hours, place dough on a floured surface. The dough will be very Sticky.  Sprinkle flour (light)  on top of dough.  Fold over 2-3 times with the flat end of a spatula until you can work with it. Add flour as you go. Form into ball. Place ball of dough into bowl or proofing basket with the smoothest side down and cover with a towel for 35 minutes. While waiting for the bread to proof, pre-heat the dutch oven and lid at 450 for 35 min. Take Lid off.  Remove dough from proofing and then place dough on parchment paper.  Lower dough into 400 preheated dutch oven and bake for 20 min. Remove lid and bake for another 10-15 minutes to brown top. Let rest before cutting.",
+        "picture": null
+    },
+    {
+        "title": "Breakfast Casserole",
+        "subTitle": null,
+        "tags": ["Larkins", "Breakfast", "Casserole"],
+        "ingredients": ["8 hash brown patties (shredded type) 8 eggs", "6 Tbl flour", "1 cup grated Parmesan cheese", "2 cups grated cheddar", "2 1/2 cup milk", "3 cups cooked bacon (or sausage) Salt and pepper to taste"],
+        "instructions": "Press sautéed hash browns in 9 x 13 casserole dish. Combine other ingredients and pour over hash browns. Bake at 350 for about 45 min.",
+        "picture": null
+    },
+    {
+        "title": "Christensen Cousin Potato Soup",
+        "subTitle": null,
+        "tags": ["Larkins", "Christensen", "Soup", "Dinner"],
+        "ingredients": ["3 carrots, pulled, sliced thin", "1 celery stalk, diced", "Onion to taste", "2 T butter", "Flour (1-2 TBL)", "4-6 medium potatoes ", "Chicken broth", "Grated cheddar cheese ", "1 cup cream or milk", "Salt and pepper to taste"]        ,
+        "instructions": "1. Chop up carrots, celery and however much onion you want. Sautee veggies in some butter for a few minutes until onions start to get tender, then add a little flour and stir that around a bit. 2. Pour in a box of chicken broth, or use bullion cubes. Add peeled/diced potatoes. You want enough liquid to cover the potatoes and veggies by about an inch. Bring to a boil and cook the soup until the potatoes are fork-tender. 3. Break up the potatoes a bit by using a potato masher at this point. It helps thicken the soup and gives a nice texture, but still leaves some potato chunks. Lower stove heat. 4. Grate some cheddar cheese into the soup, stir until it's melted. Add cream or milk to the soup - maybe a cup, depending on how thick you want.",
+        "picture": null
+    },
+    {
+        "title": "Vicki's Rolls",
+        "subTitle": null,
+        "tags": ["Larkins", "Bread", "AH"],
+        "ingredients": ["2 1/2 cups flour 1/2 cup sugar", "2 tsps. Salt", "2 TBL yeast", "1 stick butter (1/2 cup) 2 cups of warm water", "1 egg", "2 1/2 to 3 more cups of flour in order to get it to the right consistency\u2014not too sticky to roll out."],
+        "instructions": "Cover and let rise for about 1 1⁄2 hours. Then punch it down and knead it. Roll the dough out and cut in circles, butter, and fold in half or cut in triangles, butter, and roll to make crescent rolls. Place on a greased cookie sheet. Cover rolls and let rise for 11/2 to 2 hours. Bake at 375 for about 15 minutes.",
+        "picture": null
+    },
+    {
+        "title": "Lisa's Banana Bread",
+        "subTitle": null,
+        "tags": ["Larkins", "Bread"],
+        "ingredients": ["1 cup sugar", "1/2 cup butter softened", "2 eggs beaten", "1/2 cup sour milk or 1/2 cup milk with 1 1/2 tsp. lemon juice", "1 tsp. baking powder 1 tsp. baking soda 1/2 tsp. salt", "3 bananas mashed"],
+        "instructions": "1. Cream butter and sugar & add eggs and sour milk 2. Combine dry ingredient & add dry ingredients to wet. 3. Stir in bananas & pour into 2 greased loaf pans. 4. Bake at 350 for 55-60 mins",
         "picture": null
     }
 ]
