@@ -8,9 +8,9 @@
         <v-card-text>
           <v-text-field
             v-model="searchTerm"
-            @input="searchFruits"
-            label="Search Recipes"
-            placeholder="Search not yet implemented"
+            @input="searchRecipes()"
+            label=""
+            placeholder="Search by title"
             append-icon="mdi-magnify"
             filled
             rounded
@@ -19,16 +19,14 @@
 
           <v-list three-line>
             <template v-for="(recipe, index) in recipes" v-if="searchResults.includes(recipe.title)">
-              <v-list-item
-                :key="recipe.title"
-              >
+              <v-list-item>
                 <v-list-item-avatar>
                   <v-img :src="recipe.picture ? '/images/' + recipe.picture : '/chef.png'"></v-img>
                 </v-list-item-avatar>
 
                 <v-list-item-content>
                   <v-list-item-title v-html="recipe.title"></v-list-item-title>
-                  <v-list-item-subtitle v-html="recipe.tags"></v-list-item-subtitle>
+<!--                  <v-list-item-subtitle v-for="tag in recipe.tags" v-html="tag"></v-list-item-subtitle>-->
                 </v-list-item-content>
               </v-list-item>
             </template>
@@ -52,13 +50,28 @@
 
 <script>
 import recipes from 'assets/recipes.json'
+import tags from "assets/tags.json";
 
 export default {
   name: 'IndexPage',
   data () {
     return {
       recipes: recipes,
+      searchTerm: '',
       searchResults: []
+    }
+  },
+  methods: {
+    searchRecipes: function () {
+      if (!this.searchTerm) {
+        this.searchResults = []
+        return
+      }
+    const results = []
+    for (const recipe of recipes) {
+      if (recipe.title.toLowerCase().includes(this.searchTerm.toLowerCase())) results.push(recipe.title)
+    }
+    this.searchResults = results
     }
   }
 }

@@ -6,9 +6,8 @@
       active-class="blue white--text"
       multiple
       column
-      @change="log()"
     >
-      <v-chip @change="log()" v-for="tag in tags">{{ tag }}</v-chip>
+      <v-chip v-for="tag in tags">{{ tag }}</v-chip>
     </v-chip-group>
     <div class="recipe-display">
       <div :key="activeTags" style="margin: 30px" v-for="recipe in recipes" v-if="!activeTags.length || tagActive(recipe)">
@@ -39,9 +38,6 @@ export default {
       activeTags: []
   }),
   methods: {
-    log: function () {
-      console.log('activeTags: ', this.activeTags)
-    },
     tagActive: function (recipe) {
       for (let tag of recipe.tags) {
         if (this.activeTags.includes(tags.indexOf(tag))) return true
