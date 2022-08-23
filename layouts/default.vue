@@ -29,7 +29,6 @@
       fixed
       app
       rounded
-      color="blue "
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
 <!--      <v-btn-->

@@ -6,6 +6,33 @@
           Welcome to The Byte Site
         </v-card-title>
         <v-card-text>
+          <v-text-field
+            v-model="searchTerm"
+            @input="searchFruits"
+            label="Search Recipes"
+            placeholder="Search not yet implemented"
+            append-icon="mdi-magnify"
+            filled
+            rounded
+            dense
+          ></v-text-field>
+
+          <v-list three-line>
+            <template v-for="(recipe, index) in recipes" v-if="searchResults.includes(recipe.title)">
+              <v-list-item
+                :key="recipe.title"
+              >
+                <v-list-item-avatar>
+                  <v-img :src="recipe.picture ? '/images/' + recipe.picture : '/chef.png'"></v-img>
+                </v-list-item-avatar>
+
+                <v-list-item-content>
+                  <v-list-item-title v-html="recipe.title"></v-list-item-title>
+                  <v-list-item-subtitle v-html="recipe.tags"></v-list-item-subtitle>
+                </v-list-item-content>
+              </v-list-item>
+            </template>
+          </v-list>
 
         </v-card-text>
         <v-card-actions>
@@ -24,7 +51,15 @@
 </template>
 
 <script>
+import recipes from 'assets/recipes.json'
+
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  data () {
+    return {
+      recipes: recipes,
+      searchResults: []
+    }
+  }
 }
 </script>
