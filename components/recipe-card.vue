@@ -9,10 +9,15 @@
         class="mx-auto"
         max-width="320"
       >
-        <v-img
-          :src="picture ? '/images/' + picture : '/chef.png'"
+        <v-img v-if="picture"
+          :src="'/images/' + picture"
           height="200px"
-        ></v-img>
+        />
+        <v-img v-else
+          :src="'/chef.png'"
+          contain
+          height="200px"
+        />
 
         <v-card-title>
           {{ title }}
