@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <h1 style="text-align: center">Recipes</h1>
     <v-chip-group
       v-model="activeTags"
@@ -21,6 +22,7 @@
         />
       </div>
     </div>
+
   </div>
 
 </template>
