@@ -18,7 +18,7 @@
         <v-carousel-item
           v-for="(item,i) in slides"
           :key="i"
-          :src="'/images/annie-and-hunter/' + item"
+          :src="'https://recipedata.blob.core.windows.net/recipeimages/' + item"
         ></v-carousel-item>
       </v-carousel>
     </template>
@@ -41,7 +41,7 @@ export default {
   name: 'InspirePage',
   data () {
     return {
-      slides: ['/annie-and-hunter.jpg', '/annie-and-hunter-2.jpg', '/annie-and-hunter-3.jpg', '/annie-and-hunter-4.jpg']
+      slides: ['annie-and-hunter.jpg', 'annie-and-hunter-2.jpg', 'annie-and-hunter-3.jpg', 'annie-and-hunter-4.jpg']
     }
   }
 }
