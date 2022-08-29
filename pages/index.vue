@@ -19,7 +19,7 @@
 
           <v-list three-line>
             <template v-for="(recipe, index) in recipes" v-if="searchResults.includes(recipe.title)">
-              <v-list-item>
+              <v-list-item :to="'/'+recipe.title">
                 <v-list-item-avatar>
                   <v-img :src="recipe.picture ? '/images/' + recipe.picture : '/chef.png'"></v-img>
                 </v-list-item-avatar>

@@ -51,8 +51,10 @@
 <!--      >-->
 <!--        <v-icon>mdi-minus</v-icon>-->
 <!--      </v-btn>-->
-      <v-toolbar-title v-text="title" />
+      <v-toolbar-title v-text="title" style="font-family: 'Ink Free'"/>
       <v-spacer />
+
+
 <!--      <v-btn-->
 <!--        icon-->
 <!--        @click.stop="rightDrawer = !rightDrawer"-->
@@ -106,7 +108,7 @@ export default {
           to: '/'
         },
         {
-          icon: 'mdi-chart-bubble',
+          icon: 'mdi-format-list-checks',
           title: 'Recipe Page',
           to: '/recipePage'
         },

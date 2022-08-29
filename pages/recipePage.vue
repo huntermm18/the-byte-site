@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <h1 style="text-align: center">Recipes</h1>
     <v-chip-group
       v-model="activeTags"
@@ -21,6 +22,7 @@
         />
       </div>
     </div>
+
   </div>
 
 </template>
@@ -39,20 +41,19 @@ export default {
   }),
   methods: {
     tagActive: function (recipe) {
-      for (let tag of recipe.tags) {
-        if (this.activeTags.includes(tags.indexOf(tag))) return true
+      for (let tag of this.activeTags) {
+        if (!recipe.tags.includes(tags[tag])) return false
       }
-      return false
+      // for (let tag of recipe.tags) {
+      //   if (this.activeTags.includes(tags.indexOf(tag))) return true
+      //   if ()
+      // }
+      // return false
+      return true
     }
   }
 }
 
-// export default class byu_id extends Vue {
-//   recipes = recipes
-//   async mounted () {
-//     console.log('recipe length: ', recipes.length)
-//   }
-// }
 </script>
 
 <style>
