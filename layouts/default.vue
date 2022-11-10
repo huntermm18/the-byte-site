@@ -114,6 +114,11 @@ export default {
         },
         {
           icon: 'mdi-chart-bubble',
+          title: 'Add a Recipe',
+          to: '/addRecipe'
+        },
+        {
+          icon: 'mdi-chart-bubble',
           title: 'More',
           to: '/inspire'
         },
