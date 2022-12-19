@@ -18,6 +18,10 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
+      # Use a GitHub Actions secret variable in a bash shell
+      - name: Step 2 - GitHub Action if statement (true)
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
