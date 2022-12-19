@@ -77,7 +77,8 @@ export default {
       if (!this.textInput) return
       const configuration = new Configuration({
         organization: "org-mzAg9STB7YZwW4oX9kCpwxvh",
-        apiKey: process.env.OPENAI_API_KEY,
+        apiKey: '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'
+        // apiKey: process.env.OPENAI_API_KEY,
       })
       const openai = new OpenAIApi(configuration)
       this.show = true
