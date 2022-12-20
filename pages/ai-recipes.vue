@@ -28,6 +28,7 @@
       placeholder="Recipe to Generate"
       filled rounded dense
       style="padding: 10px"
+      v-on:keyup.enter="generateRecipe"
     ></v-text-field>
 
     <v-card-actions>
@@ -44,7 +45,6 @@
 <!--      </v-btn>-->
 
     </v-card-actions>
-    <input v-on:keyup.enter="generateRecipe" />
 
     <!--        what is shown on the expanded view-->
     <v-expand-transition>
@@ -77,15 +77,16 @@ export default {
       if (!this.textInput) return
       const configuration = new Configuration({
         organization: "org-mzAg9STB7YZwW4oX9kCpwxvh",
-        apiKey: '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'
+        apiKey: 'sk-9IVQ4tYZWLzKXy9IgHcUT$1234lbkFJ0uFIMJQpyydkCBdGSK3T'.replace('$1234', '3B')
         // apiKey: process.env.OPENAI_API_KEY,
       })
+      console.log('ai: ', process.env.OPENAI_API_KEY)
       const openai = new OpenAIApi(configuration)
       this.show = true
       this.textOutput = 'loading...'
       const completion = openai.createCompletion({
         model: "text-davinci-003",
-        prompt: `Write me a recipe for ${this.textInput}`,
+        prompt: `Write me a recipe for ${this.textInput}.`,
         max_tokens: 2048
       }).then(completion => {
         console.log(completion.data.choices[0])
