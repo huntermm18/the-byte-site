@@ -80,7 +80,7 @@ export default {
         apiKey: 'sk-9IVQ4tYZWLzKXy9IgHcUT$1234lbkFJ0uFIMJQpyydkCBdGSK3T'.replace('$1234', '3B')
         // apiKey: process.env.OPENAI_API_KEY,
       })
-      console.log('ai: ', process.env.OPENAI_API_KEY)
+      // console.log('ai: ', process.env.OPENAI_API_KEY)
       const openai = new OpenAIApi(configuration)
       this.show = true
       this.textOutput = 'loading...'
@@ -100,5 +100,7 @@ export default {
 }
 </script>
 <style scoped>
-
+  * {
+    word-break: break-word;
+  }
 </style>

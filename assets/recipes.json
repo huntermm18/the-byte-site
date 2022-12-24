@@ -361,6 +361,12 @@
         "picture": null
     },
     {
+        "title": "Disaster (A Recipe For)",
+        "ingredients": ["1/4 c. Merry", "1/2 c. Christmas", "2 Tbs Annie"],
+        "instructions": "Combine all ingredients and mix with a lot of heart. Then Bake in the downstairs microwave for half an hour",
+        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKJ5gAp4SU7aCxk21l7mk7ERP_vDzjqVzN-0dVWfFlpJch5OZRbCataPRWGalhtPrK5cY&usqp=CAU"
+    },
+    {
         "title": "Fresh Spaghetti",
         "subTitle": null,
         "tags": ["Dinner", "Madsen", "Pasta"],

@@ -28,7 +28,6 @@
 </template>
 
 <script>
-// import { Vue } from 'nuxt-property-decorator'
 import recipes from 'assets/recipes.json'
 import tags from 'assets/tags.json'
 
