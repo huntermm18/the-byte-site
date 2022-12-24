@@ -10,9 +10,10 @@
         max-width="320"
       >
         <v-img v-if="picture"
-          :src="'/images/' + picture"
+          :src="picture"
           height="200px"
         />
+<!--        :src="'/images/' + picture"-->
         <v-img v-else
           :src="'/chef.png'"
           contain
