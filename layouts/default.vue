@@ -122,11 +122,11 @@ export default {
           title: 'AI Recipes',
           to: '/ai-recipes'
         },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'More',
-          to: '/inspire'
-        },
+        // {
+        //   icon: 'mdi-chart-bubble',
+        //   title: 'More',
+        //   to: '/inspire'
+        // },
       ],
       miniVariant: false,
       right: true,
