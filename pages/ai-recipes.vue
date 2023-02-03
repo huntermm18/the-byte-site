@@ -87,7 +87,7 @@ export default {
       const completion = openai.createCompletion({
         model: "text-davinci-003",
         prompt: `Write me a recipe for ${this.textInput}.`,
-        max_tokens: 2048
+        max_tokens: 4098
       }).then(completion => {
         console.log(completion.data.choices[0])
         this.textOutput = completion.data.choices[0].text
