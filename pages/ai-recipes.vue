@@ -87,13 +87,13 @@ export default {
       const completion = openai.createCompletion({
         model: "text-davinci-003",
         prompt: `Write me a recipe for ${this.textInput}.`,
-        max_tokens: 4098
+        max_tokens: 2048
       }).then(completion => {
         console.log(completion.data.choices[0])
         this.textOutput = completion.data.choices[0].text
       }).catch(e => {
         console.error(e)
-        this.textOutput = 'An error has occurred. Please try again later.'
+        this.textOutput = 'An error has occurred. Please try again later.' + e
       })
     },
   },
