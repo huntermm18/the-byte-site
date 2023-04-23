@@ -77,7 +77,7 @@ export default {
       if (!this.textInput) return
       const configuration = new Configuration({
         organization: "org-mzAg9STB7YZwW4oX9kCpwxvh",
-        apiKey: 'sk-9IVQ4tYZWLzKXy9IgHcUT$1234lbkFJ0uFIMJQpyydkCBdGSK3T'.replace('$1234', '3B')
+        apiKey: 'sk-dsIqX9AeG9RPa3ThJjh5T3BlbkFJuTG6xgr1$1234pxcNGFMhfB'.replace('$1234', 'ie')
         // apiKey: process.env.OPENAI_API_KEY,
       })
       // console.log('ai: ', process.env.OPENAI_API_KEY)
