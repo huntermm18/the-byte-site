@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <h1 style="text-align: center">Recipes</h1>
     <v-chip-group
       v-model="activeTags"
@@ -8,10 +7,14 @@
       multiple
       column
     >
-      <v-chip v-for="tag in tags">{{ tag }}</v-chip>
+      <v-chip v-for="tag in tags" :key="tag">{{ tag }}</v-chip>
     </v-chip-group>
     <div class="recipe-display">
-      <div :key="activeTags" style="margin: 30px" v-for="recipe in recipes" v-if="!activeTags.length || tagActive(recipe)">
+      <div
+        :key="recipe.id"
+        style="margin: 30px"
+        v-for="recipe in filteredRecipes"
+      >
         <recipe-card
           :title="recipe.title"
           :sub-title="recipe.subTitle"
@@ -22,37 +25,52 @@
         />
       </div>
     </div>
-
   </div>
-
 </template>
 
 <script>
-import recipes from 'assets/recipes.json'
-import tags from 'assets/tags.json'
+// import recipes from 'assets/recipes.json'
+import tags from "assets/tags.json";
+import { get_recipes } from "assets/get_recipes_from_database.js";
 
 export default {
-  name: 'recipePage',
+  name: "recipePage",
+
   data: () => ({
-      recipes: recipes,
-      tags: tags,
-      activeTags: []
+    recipes: [],
+    tags: tags,
+    activeTags: [],
   }),
+
+  created() {
+    get_recipes().then((result) => {
+      this.recipes = result;
+    });
+  },
+
+  computed: {
+    filteredRecipes() {
+      if (this.activeTags.length === 0) {
+        return this.recipes;
+      } else {
+        return this.recipes.filter((recipe) => {
+          return this.activeTags.every((tag) => {
+            return recipe.tags.includes(this.tags[tag]);
+          });
+        });
+      }
+    },
+  },
+
   methods: {
     tagActive: function (recipe) {
       for (let tag of this.activeTags) {
-        if (!recipe.tags.includes(tags[tag])) return false
+        if (!recipe.tags.includes(tags[tag])) return false;
       }
-      // for (let tag of recipe.tags) {
-      //   if (this.activeTags.includes(tags.indexOf(tag))) return true
-      //   if ()
-      // }
-      // return false
-      return true
-    }
-  }
-}
-
+      return true;
+    },
+  },
+};
 </script>
 
 <style>

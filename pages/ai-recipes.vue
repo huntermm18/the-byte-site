@@ -77,8 +77,7 @@ export default {
       if (!this.textInput) return
       const configuration = new Configuration({
         organization: "org-mzAg9STB7YZwW4oX9kCpwxvh",
-        apiKey: 'sk-dsIqX9AeG9RPa3ThJjh5T3BlbkFJuTG6xgr1$1234pxcNGFMhfB'.replace('$1234', 'ie')
-        // apiKey: process.env.OPENAI_API_KEY,
+        apiKey: "TODO"
       })
       // console.log('ai: ', process.env.OPENAI_API_KEY)
       const openai = new OpenAIApi(configuration)

@@ -50,7 +50,6 @@
 
 <script>
 import recipes from 'assets/recipes.json'
-import tags from "assets/tags.json";
 
 export default {
   name: 'IndexPage',
